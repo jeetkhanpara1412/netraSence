@@ -1,0 +1,62 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: retinasight-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-retinasight_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in eye/.env}
+      POSTGRES_DB: ${POSTGRES_DB:-retinasight_db}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$${POSTGRES_USER}\" -d \"$${POSTGRES_DB}\""]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: retinasight-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT:-development}
+      SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in eye/.env}
+      ALLOW_SQLITE_FALLBACK: "false"
+      DATABASE_URL: postgresql://${POSTGRES_USER:-retinasight_user}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-retinasight_db}
+      STORAGE_DIR: /app/storage
+      MODEL_PATH: /app/ml/weights/efficientnet_b0_dr.pth
+      DEVICE: cpu
+      REFERABLE_DR_THRESHOLD: 2
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./backend/storage:/app/storage
+      - ./backend/ml/weights:/app/ml/weights
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:8000}
+    container_name: retinasight-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "127.0.0.1:3000:3000"
+
+volumes:
+  postgres_data:

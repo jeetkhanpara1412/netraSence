@@ -1,0 +1,117 @@
+{
+  "planHash": "04dacf23aa7adfaffab48486cf78fccabf5f7ff687a7cc07d302b67a933029c9",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-10-19T03:42:22.0177335Z",
+  "retryCount": 2,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "frontend-production-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E react-example@0.0.0 build\r\n\u003E vite build\r\n\r\n\u001B[36mvite v6.4.4 \u001B[32mbuilding for production...\u001B[36m\u001B[39m\r\ntransforming...\r\n\u001B[32m\u2713\u001B[39m 1685 modules transformed.\r\nrendering chunks...\r\ncomputing gzip size...\r\n\u001B[2mdist/\u001B[22m\u001B[32mindex.html                 \u001B[39m\u001B[1m\u001B[2m  1.28 kB\u001B[22m\u001B[1m\u001B[22m\u001B[2m \u2502 gzip:   0.54 kB\u001B[22m\r\n\u001B[2mdist/\u001B[22m\u001B[35massets/index-Dkh91hQa.css  \u001B[39m\u001B[1m\u001B[2m 78.21 kB\u001B[22m\u001B[1m\u001B[22m\u001B[2m \u2502 gzip:  13.72 kB\u001B[22m\r\n\u001B[2mdist/\u001B[22m\u001B[36massets/index-nDOWZgoe.js   \u001B[39m\u001B[1m\u001B[2m425.60 kB\u001B[22m\u001B[1m\u001B[22m\u001B[2m \u2502 gzip: 114.09 kB\u001B[22m\r\n\u001B[32m\u2713 built in 3.98s\u001B[39m\r\n",
+        "durationMs": 5685
+      },
+      {
+        "name": "frontend-type-check",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E react-example@0.0.0 lint\r\n\u003E tsc --noEmit\r\n\r\n",
+        "durationMs": 4744
+      },
+      {
+        "name": "backend-tests",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": ".............                                                            [100%]\r\n============================== warnings summary ===============================\r\n.venv\\Lib\\site-packages\\starlette\\formparsers.py:12\r\n  E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\.venv\\Lib\\site-packages\\starlette\\formparsers.py:12: PendingDeprecationWarning: Please use \u0060import python_multipart\u0060 instead.\r\n    import multipart\r\n\r\n.venv\\Lib\\site-packages\\starlette\\testclient.py:40\r\n  E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\.venv\\Lib\\site-packages\\starlette\\testclient.py:40: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.\r\n    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]\r\n\r\napp\\core\\config.py:7\r\n  E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\app\\core\\config.py:7: PydanticDeprecatedSince20: Support for class-based \u0060config\u0060 is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/\r\n    class Settings(BaseSettings):\r\n\r\napp\\schemas\\auth.py:7\r\n  E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\app\\schemas\\auth.py:7: PydanticDeprecatedSince20: Support for class-based \u0060config\u0060 is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/\r\n    class UserPublic(BaseModel):\r\n\r\napp\\schemas\\auth.py:51\r\n  E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\app\\schemas\\auth.py:51: PydanticDeprecatedSince20: Support for class-based \u0060config\u0060 is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/\r\n    class APIKeyResponse(BaseModel):\r\n\r\napp\\schemas\\doctor_review.py:6\r\n  E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\app\\schemas\\doctor_review.py:6: PydanticDeprecatedSince20: Using extra keyword arguments on \u0060Field\u0060 is deprecated and will be removed. Use \u0060json_schema_extra\u0060 instead. (Extra keys: \u0027example\u0027). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/\r\n    decision: str = Field(..., example=\u0022Accept\u0022)  # Accept, Modify, Mark for Review, Refer\r\n\r\napp\\schemas\\doctor_review.py:7\r\n  E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\app\\schemas\\doctor_review.py:7: PydanticDeprecatedSince20: Using extra keyword arguments on \u0060Field\u0060 is deprecated and will be removed. Use \u0060json_schema_extra\u0060 instead. (Extra keys: \u0027example\u0027). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/\r\n    finalDrLevel: int = Field(..., ge=0, le=4, example=2)\r\n\r\napp\\schemas\\doctor_review.py:8\r\n  E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\app\\schemas\\doctor_review.py:8: PydanticDeprecatedSince20: Using extra keyword arguments on \u0060Field\u0060 is deprecated and will be removed. Use \u0060json_schema_extra\u0060 instead. (Extra keys: \u0027example\u0027). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/\r\n    urgency: Optional[str] = Field(None, example=\u0022To be determined by the reviewing clinician\u0022)\r\n\r\napp\\schemas\\doctor_review.py:9\r\n  E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\app\\schemas\\doctor_review.py:9: PydanticDeprecatedSince20: Using extra keyword arguments on \u0060Field\u0060 is deprecated and will be removed. Use \u0060json_schema_extra\u0060 instead. (Extra keys: \u0027example\u0027). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.14/migration/\r\n    overrideReason: Optional[str] = Field(None, example=\u0022Enter the clinician\u0027s reason if the grade is changed\u0022)\r\n\r\napp\\schemas\\doctor_review.py:10\r\n  E:\\p\n\u2026[truncated]",
+        "durationMs": 17306
+      },
+      {
+        "name": "frontend-home-http-probe",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!doctype html\u003E\n\u003Chtml lang=\u0022en\u0022\u003E\n  \u003Chead\u003E\n    \u003Cscript type=\u0022module\u0022\u003Eimport { injectIntoGlobalHook } from \u0022/@react-refresh\u0022;\ninjectIntoGlobalHook(window);\nwindow.$RefreshReg$ = () =\u003E {};\nwindow.$RefreshSig$ = () =\u003E (type) =\u003E type;\u003C/script\u003E\n\n    \u003Cscript type=\u0022module\u0022 src=\u0022/@vite/client\u0022\u003E\u003C/script\u003E\n\n    \u003Cmeta charset=\u0022UTF-8\u0022 /\u003E\n    \u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1.0\u0022 /\u003E\n    \u003Ctitle\u003ERetinaSight AI - Explainable Diabetic Retinopathy Screening\u003C/title\u003E\n    \u003Cmeta name=\u0022description\u0022 content=\u0022RetinaSight AI: Explainable Diabetic Retinopathy Screening for doctors in hospitals and rural screening centers.\u0022 /\u003E\n    \u003Cmeta property=\u0022og:title\u0022 content=\u0022RetinaSight AI - Explainable Diabetic Retinopathy Screening\u0022 /\u003E\n    \u003Cmeta property=\u0022og:description\u0022 content=\u0022RetinaSight AI: Explainable Diabetic Retinopathy Screening for doctors in hospitals and rural screening centers.\u0022 /\u003E\n    \u003Cmeta property=\u0022og:type\u0022 content=\u0022website\u0022 /\u003E\n    \u003Clink rel=\u0022preconnect\u0022 href=\u0022https://fonts.googleapis.com\u0022\u003E\n    \u003Clink rel=\u0022preconnect\u0022 href=\u0022https://fonts.gstatic.com\u0022 crossorigin\u003E\n    \u003Clink href=\u0022https://fonts.googleapis.com/css2?family=Plus\u002BJakarta\u002BSans:wght@400;500;600;700;800\u0026family=JetBrains\u002BMono:wght@400;500;600\u0026display=swap\u0022 rel=\u0022stylesheet\u0022\u003E\n  \u003C/head\u003E\n  \u003Cbody class=\u0022bg-slate-50 text-slate-900 antialiased font-sans\u0022\u003E\n    \u003Cdiv id=\u0022root\u0022\u003E\u003C/div\u003E\n    \u003Cscript type=\u0022module\u0022 src=\u0022/src/main.tsx\u0022\u003E\u003C/script\u003E\n  \u003C/body\u003E\n\u003C/html\u003E\n\n\n--- server output ---\n\r\n\u003E react-example@0.0.0 dev\r\n\u003E vite --port=3000 --host=127.0.0.1\r\n\r\n\r\n  \u001B[32m\u001B[1mVITE\u001B[22m v6.4.4\u001B[39m  \u001B[2mready in \u001B[0m\u001B[1m803\u001B[22m\u001B[2m\u001B[0m ms\u001B[22m\r\n\r\n  \u001B[32m\u279C\u001B[39m  \u001B[1mLocal\u001B[22m:   \u001B[36mhttp://127.0.0.1:\u001B[1m3000\u001B[22m/\u001B[39m\r\n",
+        "durationMs": 6433
+      }
+    ],
+    "executions": [
+      {
+        "source": "frontend-production-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "E:\\project prectis\\diabetic retinopathy screening module\\eye",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "frontend-type-check",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "lint"
+        ],
+        "cwd": "E:\\project prectis\\diabetic retinopathy screening module\\eye",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      },
+      {
+        "source": "backend-tests",
+        "resolvedExecutable": "E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\.venv\\Scripts\\python.EXE",
+        "args": [
+          "-m",
+          "pytest",
+          "tests",
+          "-q"
+        ],
+        "cwd": "E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend",
+        "env": {},
+        "prependPath": [
+          "E:\\project prectis\\diabetic retinopathy screening module\\eye\\backend\\.venv\\Scripts"
+        ],
+        "platform": "win32"
+      },
+      {
+        "source": "frontend-home-http-probe",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.CMD",
+        "args": [
+          "run",
+          "dev"
+        ],
+        "cwd": "E:\\project prectis\\diabetic retinopathy screening module\\eye",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32"
+      }
+    ]
+  }
+}

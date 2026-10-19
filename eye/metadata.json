@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix RetinaAI - Diabetic Retinopathy Screening Module",
+  "description": "Explainable AI for Diabetic Retinopathy Screening in Rural India: Doctor screening workstation and comprehensive clinical report generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

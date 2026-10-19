@@ -1,0 +1,4585 @@
+{
+  "checks": [
+    "Image decoding, dimensions, and duplicate SHA-256 groups",
+    "Grade labels, duplicate IDs, image coverage, and class counts",
+    "Landmark image matches and coordinate bounds",
+    "Segmentation mask decoding, two-color content, image IDs, and dimensions",
+    "Retinal-vessel image/manual/mask pairs and dimensions",
+    "IDRiD license text presence"
+  ],
+  "dataset_root": "SIHDatasets",
+  "errors": [],
+  "idrid": {
+    "conflicting_label_duplicate_groups": [
+      {
+        "files": [
+          {
+            "grade": "4",
+            "image_id": "idrid_028",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_028.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "3",
+            "image_id": "idrid_327",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_327.jpg",
+            "split": "training"
+          }
+        ],
+        "sha256": "350754e96bf6b9540264c1b53088dc1f5826edb2a9d3d3221acf9ef5afd76a13"
+      },
+      {
+        "files": [
+          {
+            "grade": "0",
+            "image_id": "idrid_118",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_118.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "3",
+            "image_id": "idrid_064",
+            "path": "SIHDatasets/idrid/images/testing/IDRiD_064.jpg",
+            "split": "testing"
+          }
+        ],
+        "sha256": "505330878f4d4186a71b8001570100b82b6b05cb431e81e2c259d8c584314708"
+      },
+      {
+        "files": [
+          {
+            "grade": "1",
+            "image_id": "idrid_021",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_021.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "2",
+            "image_id": "idrid_391",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_391.jpg",
+            "split": "training"
+          }
+        ],
+        "sha256": "7c8af82fac4906b51dbe2d827e050b8b29a18cac21f569d2ac16af1cd65c9baf"
+      }
+    ],
+    "cross_split_duplicate_groups": [
+      {
+        "files": [
+          {
+            "grade": "0",
+            "image_id": "idrid_118",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_118.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "3",
+            "image_id": "idrid_064",
+            "path": "SIHDatasets/idrid/images/testing/IDRiD_064.jpg",
+            "split": "testing"
+          }
+        ],
+        "sha256": "505330878f4d4186a71b8001570100b82b6b05cb431e81e2c259d8c584314708"
+      }
+    ],
+    "exact_content_duplicate_groups": [
+      {
+        "files": [
+          {
+            "grade": null,
+            "image_id": "idrid_01",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_01.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "2",
+            "image_id": "idrid_102",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_102.jpg",
+            "split": "training"
+          }
+        ],
+        "sha256": "05bf31a076f4ff03875eb5050e6116db9d7b2dd8a8bdb356c60a3fc94343a304"
+      },
+      {
+        "files": [
+          {
+            "grade": null,
+            "image_id": "idrid_03",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_03.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "3",
+            "image_id": "idrid_369",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_369.jpg",
+            "split": "training"
+          }
+        ],
+        "sha256": "092d05e8bb47568b511d896dd8ec79dccf9f5dd53bcb8d3ce5ec1a6c38d3e1b3"
+      },
+      {
+        "files": [
+          {
+            "grade": null,
+            "image_id": "idrid_02",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_02.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "3",
+            "image_id": "idrid_366",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_366.jpg",
+            "split": "training"
+          }
+        ],
+        "sha256": "2a5d305ab8414ec0c23316ff3d2eb8d82c02292d1ea1b7a8ebc4bd8080d47483"
+      },
+      {
+        "files": [
+          {
+            "grade": "1",
+            "image_id": "idrid_079",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_079.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "1",
+            "image_id": "idrid_279",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_279.jpg",
+            "split": "training"
+          }
+        ],
+        "sha256": "314e41f14e9d2966eff50a085d02c7acf2a1439702358b5849f3db4657f8381b"
+      },
+      {
+        "files": [
+          {
+            "grade": "4",
+            "image_id": "idrid_028",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_028.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "3",
+            "image_id": "idrid_327",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_327.jpg",
+            "split": "training"
+          }
+        ],
+        "sha256": "350754e96bf6b9540264c1b53088dc1f5826edb2a9d3d3221acf9ef5afd76a13"
+      },
+      {
+        "files": [
+          {
+            "grade": "0",
+            "image_id": "idrid_118",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_118.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "3",
+            "image_id": "idrid_064",
+            "path": "SIHDatasets/idrid/images/testing/IDRiD_064.jpg",
+            "split": "testing"
+          }
+        ],
+        "sha256": "505330878f4d4186a71b8001570100b82b6b05cb431e81e2c259d8c584314708"
+      },
+      {
+        "files": [
+          {
+            "grade": "1",
+            "image_id": "idrid_021",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_021.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "2",
+            "image_id": "idrid_391",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_391.jpg",
+            "split": "training"
+          }
+        ],
+        "sha256": "7c8af82fac4906b51dbe2d827e050b8b29a18cac21f569d2ac16af1cd65c9baf"
+      },
+      {
+        "files": [
+          {
+            "grade": "2",
+            "image_id": "idrid_073",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_073.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "2",
+            "image_id": "idrid_375",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_375.jpg",
+            "split": "training"
+          }
+        ],
+        "sha256": "a05e538dcf8554a99cdbc72a2ae4dedc196d87c73d9278869e644b4163af8f4d"
+      },
+      {
+        "files": [
+          {
+            "grade": "2",
+            "image_id": "idrid_045",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_045.jpg",
+            "split": "training"
+          },
+          {
+            "grade": "2",
+            "image_id": "idrid_333",
+            "path": "SIHDatasets/idrid/images/training/IDRiD_333.jpg",
+            "split": "training"
+          }
+        ],
+        "sha256": "fe4f412a179adf78bd9a367d1702878d45302db3f7706c4bf7efc834a312e91c"
+      }
+    ],
+    "grading": {
+      "testing": {
+        "class_counts": {
+          "0": 34,
+          "1": 5,
+          "2": 32,
+          "3": 19,
+          "4": 13
+        },
+        "csv": "SIHDatasets/idrid/annotations/grading/b. IDRiD_Disease Grading_Testing Labels.csv",
+        "duplicate_label_ids": [],
+        "invalid_rows": [],
+        "labelled_rows": 103,
+        "labels_without_image": [],
+        "unlabelled_image_count": 27,
+        "unlabelled_image_ids": [
+          "idrid_55",
+          "idrid_56",
+          "idrid_57",
+          "idrid_58",
+          "idrid_59",
+          "idrid_60",
+          "idrid_61",
+          "idrid_62",
+          "idrid_63",
+          "idrid_64",
+          "idrid_65",
+          "idrid_66",
+          "idrid_67",
+          "idrid_68",
+          "idrid_69",
+          "idrid_70",
+          "idrid_71",
+          "idrid_72",
+          "idrid_73",
+          "idrid_74",
+          "idrid_75",
+          "idrid_76",
+          "idrid_77",
+          "idrid_78",
+          "idrid_79",
+          "idrid_80",
+          "idrid_81"
+        ]
+      },
+      "training": {
+        "class_counts": {
+          "0": 134,
+          "1": 20,
+          "2": 136,
+          "3": 74,
+          "4": 49
+        },
+        "csv": "SIHDatasets/idrid/annotations/grading/a. IDRiD_Disease Grading_Training Labels.csv",
+        "duplicate_label_ids": [],
+        "invalid_rows": [],
+        "labelled_rows": 413,
+        "labels_without_image": [],
+        "unlabelled_image_count": 54,
+        "unlabelled_image_ids": [
+          "idrid_01",
+          "idrid_02",
+          "idrid_03",
+          "idrid_04",
+          "idrid_05",
+          "idrid_06",
+          "idrid_07",
+          "idrid_08",
+          "idrid_09",
+          "idrid_10",
+          "idrid_11",
+          "idrid_12",
+          "idrid_13",
+          "idrid_14",
+          "idrid_15",
+          "idrid_16",
+          "idrid_17",
+          "idrid_18",
+          "idrid_19",
+          "idrid_20",
+          "idrid_21",
+          "idrid_22",
+          "idrid_23",
+          "idrid_24",
+          "idrid_25",
+          "idrid_26",
+          "idrid_27",
+          "idrid_28",
+          "idrid_29",
+          "idrid_30",
+          "idrid_31",
+          "idrid_32",
+          "idrid_33",
+          "idrid_34",
+          "idrid_35",
+          "idrid_36",
+          "idrid_37",
+          "idrid_38",
+          "idrid_39",
+          "idrid_40",
+          "idrid_41",
+          "idrid_42",
+          "idrid_43",
+          "idrid_44",
+          "idrid_45",
+          "idrid_46",
+          "idrid_47",
+          "idrid_48",
+          "idrid_49",
+          "idrid_50",
+          "idrid_51",
+          "idrid_52",
+          "idrid_53",
+          "idrid_54"
+        ]
+      }
+    },
+    "images": {
+      "testing": {
+        "count": 130,
+        "decode_failures": [],
+        "dimension_counts": {
+          "4288x2848": 130
+        }
+      },
+      "training": {
+        "count": 467,
+        "decode_failures": [],
+        "dimension_counts": {
+          "4288x2848": 467
+        }
+      }
+    },
+    "landmarks": {
+      "fovea_testing": {
+        "csv": "SIHDatasets/idrid/annotations/landmarks/fovea/IDRiD_Fovea_Center_Testing Set_Markups.csv",
+        "duplicate_image_ids": [],
+        "invalid_coordinates": [],
+        "missing_image_ids": [],
+        "out_of_bounds_image_ids": [],
+        "populated_rows": 103
+      },
+      "fovea_training": {
+        "csv": "SIHDatasets/idrid/annotations/landmarks/fovea/IDRiD_Fovea_Center_Training Set_Markups.csv",
+        "duplicate_image_ids": [],
+        "invalid_coordinates": [],
+        "missing_image_ids": [],
+        "out_of_bounds_image_ids": [],
+        "populated_rows": 413
+      },
+      "optic_disc_testing": {
+        "csv": "SIHDatasets/idrid/annotations/landmarks/optic_disc/b. IDRiD_OD_Center_Testing Set_Markups.csv",
+        "duplicate_image_ids": [],
+        "invalid_coordinates": [],
+        "missing_image_ids": [],
+        "out_of_bounds_image_ids": [],
+        "populated_rows": 103
+      },
+      "optic_disc_training": {
+        "csv": "SIHDatasets/idrid/annotations/landmarks/optic_disc/a. IDRiD_OD_Center_Training Set_Markups.csv",
+        "duplicate_image_ids": [],
+        "invalid_coordinates": [],
+        "missing_image_ids": [],
+        "out_of_bounds_image_ids": [],
+        "populated_rows": 413
+      }
+    },
+    "licenses": [
+      "SIHDatasets/idrid/licenses/CC-BY-4.0-disease-grading.txt",
+      "SIHDatasets/idrid/licenses/CC-BY-4.0-segmentation.txt",
+      "SIHDatasets/idrid/licenses/LICENSE.txt"
+    ],
+    "segmentation": {
+      "testing": {
+        "EX": {
+          "decode_failures": [],
+          "dimension_mismatch_ids": [],
+          "mask_count": 27,
+          "masks": [
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_55_EX.tif",
+              "source_image_id": "idrid_055",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_56_EX.tif",
+              "source_image_id": "idrid_056",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_57_EX.tif",
+              "source_image_id": "idrid_057",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_58_EX.tif",
+              "source_image_id": "idrid_058",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_59_EX.tif",
+              "source_image_id": "idrid_059",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_60_EX.tif",
+              "source_image_id": "idrid_060",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_61_EX.tif",
+              "source_image_id": "idrid_061",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_62_EX.tif",
+              "source_image_id": "idrid_062",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_63_EX.tif",
+              "source_image_id": "idrid_063",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_64_EX.tif",
+              "source_image_id": "idrid_064",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_65_EX.tif",
+              "source_image_id": "idrid_065",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_66_EX.tif",
+              "source_image_id": "idrid_066",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_67_EX.tif",
+              "source_image_id": "idrid_067",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_68_EX.tif",
+              "source_image_id": "idrid_068",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_69_EX.tif",
+              "source_image_id": "idrid_069",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_70_EX.tif",
+              "source_image_id": "idrid_070",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_71_EX.tif",
+              "source_image_id": "idrid_071",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_72_EX.tif",
+              "source_image_id": "idrid_072",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_73_EX.tif",
+              "source_image_id": "idrid_073",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_74_EX.tif",
+              "source_image_id": "idrid_074",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_75_EX.tif",
+              "source_image_id": "idrid_075",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_76_EX.tif",
+              "source_image_id": "idrid_076",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_77_EX.tif",
+              "source_image_id": "idrid_077",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_78_EX.tif",
+              "source_image_id": "idrid_078",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_79_EX.tif",
+              "source_image_id": "idrid_079",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_80_EX.tif",
+              "source_image_id": "idrid_080",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "RGBA",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/3. Hard Exudates/IDRiD_81_EX.tif",
+              "source_image_id": "idrid_081",
+              "unique_pixel_values": [
+                [
+                  0,
+                  0,
+                  0,
+                  255
+                ],
+                [
+                  255,
+                  0,
+                  0,
+                  255
+                ]
+              ],
+              "width": 4288
+            }
+          ],
+          "missing_source_image_ids": [],
+          "non_binary_masks": []
+        },
+        "HE": {
+          "decode_failures": [],
+          "dimension_mismatch_ids": [],
+          "mask_count": 27,
+          "masks": [
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_55_HE.tif",
+              "source_image_id": "idrid_055",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_56_HE.tif",
+              "source_image_id": "idrid_056",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_57_HE.tif",
+              "source_image_id": "idrid_057",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_58_HE.tif",
+              "source_image_id": "idrid_058",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_59_HE.tif",
+              "source_image_id": "idrid_059",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_60_HE.tif",
+              "source_image_id": "idrid_060",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_61_HE.tif",
+              "source_image_id": "idrid_061",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_62_HE.tif",
+              "source_image_id": "idrid_062",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_63_HE.tif",
+              "source_image_id": "idrid_063",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_64_HE.tif",
+              "source_image_id": "idrid_064",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_65_HE.tif",
+              "source_image_id": "idrid_065",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_66_HE.tif",
+              "source_image_id": "idrid_066",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_67_HE.tif",
+              "source_image_id": "idrid_067",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_68_HE.tif",
+              "source_image_id": "idrid_068",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_69_HE.tif",
+              "source_image_id": "idrid_069",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_70_HE.tif",
+              "source_image_id": "idrid_070",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_71_HE.tif",
+              "source_image_id": "idrid_071",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_72_HE.tif",
+              "source_image_id": "idrid_072",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_73_HE.tif",
+              "source_image_id": "idrid_073",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_74_HE.tif",
+              "source_image_id": "idrid_074",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_75_HE.tif",
+              "source_image_id": "idrid_075",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_76_HE.tif",
+              "source_image_id": "idrid_076",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_77_HE.tif",
+              "source_image_id": "idrid_077",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_78_HE.tif",
+              "source_image_id": "idrid_078",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_79_HE.tif",
+              "source_image_id": "idrid_079",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_80_HE.tif",
+              "source_image_id": "idrid_080",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/2. Haemorrhages/IDRiD_81_HE.tif",
+              "source_image_id": "idrid_081",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            }
+          ],
+          "missing_source_image_ids": [],
+          "non_binary_masks": []
+        },
+        "MA": {
+          "decode_failures": [],
+          "dimension_mismatch_ids": [],
+          "mask_count": 27,
+          "masks": [
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_55_MA.tif",
+              "source_image_id": "idrid_055",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_56_MA.tif",
+              "source_image_id": "idrid_056",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_57_MA.tif",
+              "source_image_id": "idrid_057",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_58_MA.tif",
+              "source_image_id": "idrid_058",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_59_MA.tif",
+              "source_image_id": "idrid_059",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_60_MA.tif",
+              "source_image_id": "idrid_060",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_61_MA.tif",
+              "source_image_id": "idrid_061",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_62_MA.tif",
+              "source_image_id": "idrid_062",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_63_MA.tif",
+              "source_image_id": "idrid_063",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_64_MA.tif",
+              "source_image_id": "idrid_064",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_65_MA.tif",
+              "source_image_id": "idrid_065",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_66_MA.tif",
+              "source_image_id": "idrid_066",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_67_MA.tif",
+              "source_image_id": "idrid_067",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_68_MA.tif",
+              "source_image_id": "idrid_068",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_69_MA.tif",
+              "source_image_id": "idrid_069",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_70_MA.tif",
+              "source_image_id": "idrid_070",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_71_MA.tif",
+              "source_image_id": "idrid_071",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_72_MA.tif",
+              "source_image_id": "idrid_072",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_73_MA.tif",
+              "source_image_id": "idrid_073",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_74_MA.tif",
+              "source_image_id": "idrid_074",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_75_MA.tif",
+              "source_image_id": "idrid_075",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_76_MA.tif",
+              "source_image_id": "idrid_076",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_77_MA.tif",
+              "source_image_id": "idrid_077",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_78_MA.tif",
+              "source_image_id": "idrid_078",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_79_MA.tif",
+              "source_image_id": "idrid_079",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_80_MA.tif",
+              "source_image_id": "idrid_080",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/1. Microaneurysms/IDRiD_81_MA.tif",
+              "source_image_id": "idrid_081",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            }
+          ],
+          "missing_source_image_ids": [],
+          "non_binary_masks": []
+        },
+        "OD": {
+          "decode_failures": [],
+          "dimension_mismatch_ids": [],
+          "mask_count": 27,
+          "masks": [
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_55_OD.tif",
+              "source_image_id": "idrid_055",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_56_OD.tif",
+              "source_image_id": "idrid_056",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_57_OD.tif",
+              "source_image_id": "idrid_057",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_58_OD.tif",
+              "source_image_id": "idrid_058",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_59_OD.tif",
+              "source_image_id": "idrid_059",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_60_OD.tif",
+              "source_image_id": "idrid_060",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_61_OD.tif",
+              "source_image_id": "idrid_061",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_62_OD.tif",
+              "source_image_id": "idrid_062",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_63_OD.tif",
+              "source_image_id": "idrid_063",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_64_OD.tif",
+              "source_image_id": "idrid_064",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_65_OD.tif",
+              "source_image_id": "idrid_065",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_66_OD.tif",
+              "source_image_id": "idrid_066",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_67_OD.tif",
+              "source_image_id": "idrid_067",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_68_OD.tif",
+              "source_image_id": "idrid_068",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_69_OD.tif",
+              "source_image_id": "idrid_069",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_70_OD.tif",
+              "source_image_id": "idrid_070",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_71_OD.tif",
+              "source_image_id": "idrid_071",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_72_OD.tif",
+              "source_image_id": "idrid_072",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_73_OD.tif",
+              "source_image_id": "idrid_073",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_74_OD.tif",
+              "source_image_id": "idrid_074",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_75_OD.tif",
+              "source_image_id": "idrid_075",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_76_OD.tif",
+              "source_image_id": "idrid_076",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_77_OD.tif",
+              "source_image_id": "idrid_077",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_78_OD.tif",
+              "source_image_id": "idrid_078",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_79_OD.tif",
+              "source_image_id": "idrid_079",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_80_OD.tif",
+              "source_image_id": "idrid_080",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/5. Optic Disc/IDRiD_81_OD.tif",
+              "source_image_id": "idrid_081",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            }
+          ],
+          "missing_source_image_ids": [],
+          "non_binary_masks": []
+        },
+        "SE": {
+          "decode_failures": [],
+          "dimension_mismatch_ids": [],
+          "mask_count": 14,
+          "masks": [
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_55_SE.tif",
+              "source_image_id": "idrid_055",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_56_SE.tif",
+              "source_image_id": "idrid_056",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_59_SE.tif",
+              "source_image_id": "idrid_059",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_60_SE.tif",
+              "source_image_id": "idrid_060",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_61_SE.tif",
+              "source_image_id": "idrid_061",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_64_SE.tif",
+              "source_image_id": "idrid_064",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_67_SE.tif",
+              "source_image_id": "idrid_067",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_68_SE.tif",
+              "source_image_id": "idrid_068",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_70_SE.tif",
+              "source_image_id": "idrid_070",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_71_SE.tif",
+              "source_image_id": "idrid_071",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_72_SE.tif",
+              "source_image_id": "idrid_072",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_73_SE.tif",
+              "source_image_id": "idrid_073",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_74_SE.tif",
+              "source_image_id": "idrid_074",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/testing/4. Soft Exudates/IDRiD_75_SE.tif",
+              "source_image_id": "idrid_075",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            }
+          ],
+          "missing_source_image_ids": [],
+          "non_binary_masks": []
+        }
+      },
+      "training": {
+        "EX": {
+          "decode_failures": [],
+          "dimension_mismatch_ids": [],
+          "mask_count": 54,
+          "masks": [
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_01_EX.tif",
+              "source_image_id": "idrid_001",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_02_EX.tif",
+              "source_image_id": "idrid_002",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_03_EX.tif",
+              "source_image_id": "idrid_003",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_04_EX.tif",
+              "source_image_id": "idrid_004",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_05_EX.tif",
+              "source_image_id": "idrid_005",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_06_EX.tif",
+              "source_image_id": "idrid_006",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_07_EX.tif",
+              "source_image_id": "idrid_007",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_08_EX.tif",
+              "source_image_id": "idrid_008",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_09_EX.tif",
+              "source_image_id": "idrid_009",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_10_EX.tif",
+              "source_image_id": "idrid_010",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_11_EX.tif",
+              "source_image_id": "idrid_011",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_12_EX.tif",
+              "source_image_id": "idrid_012",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_13_EX.tif",
+              "source_image_id": "idrid_013",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_14_EX.tif",
+              "source_image_id": "idrid_014",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_15_EX.tif",
+              "source_image_id": "idrid_015",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_16_EX.tif",
+              "source_image_id": "idrid_016",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_17_EX.tif",
+              "source_image_id": "idrid_017",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_18_EX.tif",
+              "source_image_id": "idrid_018",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_19_EX.tif",
+              "source_image_id": "idrid_019",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_20_EX.tif",
+              "source_image_id": "idrid_020",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_21_EX.tif",
+              "source_image_id": "idrid_021",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_22_EX.tif",
+              "source_image_id": "idrid_022",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_23_EX.tif",
+              "source_image_id": "idrid_023",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_24_EX.tif",
+              "source_image_id": "idrid_024",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_25_EX.tif",
+              "source_image_id": "idrid_025",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_26_EX.tif",
+              "source_image_id": "idrid_026",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_27_EX.tif",
+              "source_image_id": "idrid_027",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_28_EX.tif",
+              "source_image_id": "idrid_028",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_29_EX.tif",
+              "source_image_id": "idrid_029",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_30_EX.tif",
+              "source_image_id": "idrid_030",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_31_EX.tif",
+              "source_image_id": "idrid_031",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_32_EX.tif",
+              "source_image_id": "idrid_032",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_33_EX.tif",
+              "source_image_id": "idrid_033",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_34_EX.tif",
+              "source_image_id": "idrid_034",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_35_EX.tif",
+              "source_image_id": "idrid_035",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_36_EX.tif",
+              "source_image_id": "idrid_036",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_37_EX.tif",
+              "source_image_id": "idrid_037",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_38_EX.tif",
+              "source_image_id": "idrid_038",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_39_EX.tif",
+              "source_image_id": "idrid_039",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_40_EX.tif",
+              "source_image_id": "idrid_040",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_41_EX.tif",
+              "source_image_id": "idrid_041",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_42_EX.tif",
+              "source_image_id": "idrid_042",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_43_EX.tif",
+              "source_image_id": "idrid_043",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_44_EX.tif",
+              "source_image_id": "idrid_044",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_45_EX.tif",
+              "source_image_id": "idrid_045",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_46_EX.tif",
+              "source_image_id": "idrid_046",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_47_EX.tif",
+              "source_image_id": "idrid_047",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_48_EX.tif",
+              "source_image_id": "idrid_048",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_49_EX.tif",
+              "source_image_id": "idrid_049",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_50_EX.tif",
+              "source_image_id": "idrid_050",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_51_EX.tif",
+              "source_image_id": "idrid_051",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_52_EX.tif",
+              "source_image_id": "idrid_052",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_53_EX.tif",
+              "source_image_id": "idrid_053",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/3. Hard Exudates/IDRiD_54_EX.tif",
+              "source_image_id": "idrid_054",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            }
+          ],
+          "missing_source_image_ids": [],
+          "non_binary_masks": []
+        },
+        "HE": {
+          "decode_failures": [],
+          "dimension_mismatch_ids": [],
+          "mask_count": 53,
+          "masks": [
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_01_HE.tif",
+              "source_image_id": "idrid_001",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_02_HE.tif",
+              "source_image_id": "idrid_002",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_03_HE.tif",
+              "source_image_id": "idrid_003",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_04_HE.tif",
+              "source_image_id": "idrid_004",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_05_HE.tif",
+              "source_image_id": "idrid_005",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_06_HE.tif",
+              "source_image_id": "idrid_006",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_07_HE.tif",
+              "source_image_id": "idrid_007",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_08_HE.tif",
+              "source_image_id": "idrid_008",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_09_HE.tif",
+              "source_image_id": "idrid_009",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_10_HE.tif",
+              "source_image_id": "idrid_010",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_11_HE.tif",
+              "source_image_id": "idrid_011",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_12_HE.tif",
+              "source_image_id": "idrid_012",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_13_HE.tif",
+              "source_image_id": "idrid_013",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_14_HE.tif",
+              "source_image_id": "idrid_014",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_15_HE.tif",
+              "source_image_id": "idrid_015",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_16_HE.tif",
+              "source_image_id": "idrid_016",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_17_HE.tif",
+              "source_image_id": "idrid_017",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_18_HE.tif",
+              "source_image_id": "idrid_018",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_19_HE.tif",
+              "source_image_id": "idrid_019",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_20_HE.tif",
+              "source_image_id": "idrid_020",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_21_HE.tif",
+              "source_image_id": "idrid_021",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_22_HE.tif",
+              "source_image_id": "idrid_022",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_23_HE.tif",
+              "source_image_id": "idrid_023",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_24_HE.tif",
+              "source_image_id": "idrid_024",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_25_HE.tif",
+              "source_image_id": "idrid_025",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_26_HE.tif",
+              "source_image_id": "idrid_026",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_27_HE.tif",
+              "source_image_id": "idrid_027",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_28_HE.tif",
+              "source_image_id": "idrid_028",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_29_HE.tif",
+              "source_image_id": "idrid_029",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_30_HE.tif",
+              "source_image_id": "idrid_030",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_31_HE.tif",
+              "source_image_id": "idrid_031",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_32_HE.tif",
+              "source_image_id": "idrid_032",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_33_HE.tif",
+              "source_image_id": "idrid_033",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_34_HE.tif",
+              "source_image_id": "idrid_034",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_35_HE.tif",
+              "source_image_id": "idrid_035",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_36_HE.tif",
+              "source_image_id": "idrid_036",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_37_HE.tif",
+              "source_image_id": "idrid_037",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_38_HE.tif",
+              "source_image_id": "idrid_038",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_39_HE.tif",
+              "source_image_id": "idrid_039",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_40_HE.tif",
+              "source_image_id": "idrid_040",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_41_HE.tif",
+              "source_image_id": "idrid_041",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_42_HE.tif",
+              "source_image_id": "idrid_042",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_44_HE.tif",
+              "source_image_id": "idrid_044",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_45_HE.tif",
+              "source_image_id": "idrid_045",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_46_HE.tif",
+              "source_image_id": "idrid_046",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_47_HE.tif",
+              "source_image_id": "idrid_047",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_48_HE.tif",
+              "source_image_id": "idrid_048",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_49_HE.tif",
+              "source_image_id": "idrid_049",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_50_HE.tif",
+              "source_image_id": "idrid_050",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_51_HE.tif",
+              "source_image_id": "idrid_051",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_52_HE.tif",
+              "source_image_id": "idrid_052",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_53_HE.tif",
+              "source_image_id": "idrid_053",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/2. Haemorrhages/IDRiD_54_HE.tif",
+              "source_image_id": "idrid_054",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            }
+          ],
+          "missing_source_image_ids": [],
+          "non_binary_masks": []
+        },
+        "MA": {
+          "decode_failures": [],
+          "dimension_mismatch_ids": [],
+          "mask_count": 54,
+          "masks": [
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_01_MA.tif",
+              "source_image_id": "idrid_001",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_02_MA.tif",
+              "source_image_id": "idrid_002",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_03_MA.tif",
+              "source_image_id": "idrid_003",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_04_MA.tif",
+              "source_image_id": "idrid_004",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_05_MA.tif",
+              "source_image_id": "idrid_005",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_06_MA.tif",
+              "source_image_id": "idrid_006",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_07_MA.tif",
+              "source_image_id": "idrid_007",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_08_MA.tif",
+              "source_image_id": "idrid_008",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_09_MA.tif",
+              "source_image_id": "idrid_009",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_10_MA.tif",
+              "source_image_id": "idrid_010",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_11_MA.tif",
+              "source_image_id": "idrid_011",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_12_MA.tif",
+              "source_image_id": "idrid_012",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_13_MA.tif",
+              "source_image_id": "idrid_013",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_14_MA.tif",
+              "source_image_id": "idrid_014",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_15_MA.tif",
+              "source_image_id": "idrid_015",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_16_MA.tif",
+              "source_image_id": "idrid_016",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_17_MA.tif",
+              "source_image_id": "idrid_017",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_18_MA.tif",
+              "source_image_id": "idrid_018",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_19_MA.tif",
+              "source_image_id": "idrid_019",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_20_MA.tif",
+              "source_image_id": "idrid_020",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_21_MA.tif",
+              "source_image_id": "idrid_021",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_22_MA.tif",
+              "source_image_id": "idrid_022",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_23_MA.tif",
+              "source_image_id": "idrid_023",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_24_MA.tif",
+              "source_image_id": "idrid_024",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_25_MA.tif",
+              "source_image_id": "idrid_025",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_26_MA.tif",
+              "source_image_id": "idrid_026",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_27_MA.tif",
+              "source_image_id": "idrid_027",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_28_MA.tif",
+              "source_image_id": "idrid_028",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_29_MA.tif",
+              "source_image_id": "idrid_029",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_30_MA.tif",
+              "source_image_id": "idrid_030",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_31_MA.tif",
+              "source_image_id": "idrid_031",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_32_MA.tif",
+              "source_image_id": "idrid_032",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_33_MA.tif",
+              "source_image_id": "idrid_033",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_34_MA.tif",
+              "source_image_id": "idrid_034",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_35_MA.tif",
+              "source_image_id": "idrid_035",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_36_MA.tif",
+              "source_image_id": "idrid_036",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_37_MA.tif",
+              "source_image_id": "idrid_037",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_38_MA.tif",
+              "source_image_id": "idrid_038",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_39_MA.tif",
+              "source_image_id": "idrid_039",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_40_MA.tif",
+              "source_image_id": "idrid_040",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_41_MA.tif",
+              "source_image_id": "idrid_041",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_42_MA.tif",
+              "source_image_id": "idrid_042",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_43_MA.tif",
+              "source_image_id": "idrid_043",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_44_MA.tif",
+              "source_image_id": "idrid_044",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_45_MA.tif",
+              "source_image_id": "idrid_045",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_46_MA.tif",
+              "source_image_id": "idrid_046",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_47_MA.tif",
+              "source_image_id": "idrid_047",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_48_MA.tif",
+              "source_image_id": "idrid_048",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_49_MA.tif",
+              "source_image_id": "idrid_049",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_50_MA.tif",
+              "source_image_id": "idrid_050",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_51_MA.tif",
+              "source_image_id": "idrid_051",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_52_MA.tif",
+              "source_image_id": "idrid_052",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_53_MA.tif",
+              "source_image_id": "idrid_053",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/1. Microaneurysms/IDRiD_54_MA.tif",
+              "source_image_id": "idrid_054",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            }
+          ],
+          "missing_source_image_ids": [],
+          "non_binary_masks": []
+        },
+        "OD": {
+          "decode_failures": [],
+          "dimension_mismatch_ids": [],
+          "mask_count": 54,
+          "masks": [
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_01_OD.tif",
+              "source_image_id": "idrid_001",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_02_OD.tif",
+              "source_image_id": "idrid_002",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_03_OD.tif",
+              "source_image_id": "idrid_003",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_04_OD.tif",
+              "source_image_id": "idrid_004",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_05_OD.tif",
+              "source_image_id": "idrid_005",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_06_OD.tif",
+              "source_image_id": "idrid_006",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_07_OD.tif",
+              "source_image_id": "idrid_007",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_08_OD.tif",
+              "source_image_id": "idrid_008",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_09_OD.tif",
+              "source_image_id": "idrid_009",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_10_OD.tif",
+              "source_image_id": "idrid_010",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_11_OD.tif",
+              "source_image_id": "idrid_011",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_12_OD.tif",
+              "source_image_id": "idrid_012",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_13_OD.tif",
+              "source_image_id": "idrid_013",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_14_OD.tif",
+              "source_image_id": "idrid_014",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_15_OD.tif",
+              "source_image_id": "idrid_015",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_16_OD.tif",
+              "source_image_id": "idrid_016",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_17_OD.tif",
+              "source_image_id": "idrid_017",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_18_OD.tif",
+              "source_image_id": "idrid_018",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_19_OD.tif",
+              "source_image_id": "idrid_019",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_20_OD.tif",
+              "source_image_id": "idrid_020",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_21_OD.tif",
+              "source_image_id": "idrid_021",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_22_OD.tif",
+              "source_image_id": "idrid_022",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_23_OD.tif",
+              "source_image_id": "idrid_023",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_24_OD.tif",
+              "source_image_id": "idrid_024",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_25_OD.tif",
+              "source_image_id": "idrid_025",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_26_OD.tif",
+              "source_image_id": "idrid_026",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_27_OD.tif",
+              "source_image_id": "idrid_027",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_28_OD.tif",
+              "source_image_id": "idrid_028",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_29_OD.tif",
+              "source_image_id": "idrid_029",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_30_OD.tif",
+              "source_image_id": "idrid_030",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_31_OD.tif",
+              "source_image_id": "idrid_031",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_32_OD.tif",
+              "source_image_id": "idrid_032",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_33_OD.tif",
+              "source_image_id": "idrid_033",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_34_OD.tif",
+              "source_image_id": "idrid_034",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_35_OD.tif",
+              "source_image_id": "idrid_035",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_36_OD.tif",
+              "source_image_id": "idrid_036",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_37_OD.tif",
+              "source_image_id": "idrid_037",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_38_OD.tif",
+              "source_image_id": "idrid_038",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_39_OD.tif",
+              "source_image_id": "idrid_039",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_40_OD.tif",
+              "source_image_id": "idrid_040",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_41_OD.tif",
+              "source_image_id": "idrid_041",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_42_OD.tif",
+              "source_image_id": "idrid_042",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_43_OD.tif",
+              "source_image_id": "idrid_043",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_44_OD.tif",
+              "source_image_id": "idrid_044",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_45_OD.tif",
+              "source_image_id": "idrid_045",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_46_OD.tif",
+              "source_image_id": "idrid_046",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_47_OD.tif",
+              "source_image_id": "idrid_047",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_48_OD.tif",
+              "source_image_id": "idrid_048",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_49_OD.tif",
+              "source_image_id": "idrid_049",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_50_OD.tif",
+              "source_image_id": "idrid_050",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_51_OD.tif",
+              "source_image_id": "idrid_051",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_52_OD.tif",
+              "source_image_id": "idrid_052",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_53_OD.tif",
+              "source_image_id": "idrid_053",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/5. Optic Disc/IDRiD_54_OD.tif",
+              "source_image_id": "idrid_054",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            }
+          ],
+          "missing_source_image_ids": [],
+          "non_binary_masks": []
+        },
+        "SE": {
+          "decode_failures": [],
+          "dimension_mismatch_ids": [],
+          "mask_count": 26,
+          "masks": [
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_03_SE.tif",
+              "source_image_id": "idrid_003",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_08_SE.tif",
+              "source_image_id": "idrid_008",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_13_SE.tif",
+              "source_image_id": "idrid_013",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_14_SE.tif",
+              "source_image_id": "idrid_014",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_17_SE.tif",
+              "source_image_id": "idrid_017",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_18_SE.tif",
+              "source_image_id": "idrid_018",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_19_SE.tif",
+              "source_image_id": "idrid_019",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_22_SE.tif",
+              "source_image_id": "idrid_022",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_23_SE.tif",
+              "source_image_id": "idrid_023",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_25_SE.tif",
+              "source_image_id": "idrid_025",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_30_SE.tif",
+              "source_image_id": "idrid_030",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_31_SE.tif",
+              "source_image_id": "idrid_031",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_32_SE.tif",
+              "source_image_id": "idrid_032",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_33_SE.tif",
+              "source_image_id": "idrid_033",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_35_SE.tif",
+              "source_image_id": "idrid_035",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_38_SE.tif",
+              "source_image_id": "idrid_038",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_39_SE.tif",
+              "source_image_id": "idrid_039",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_46_SE.tif",
+              "source_image_id": "idrid_046",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_47_SE.tif",
+              "source_image_id": "idrid_047",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_48_SE.tif",
+              "source_image_id": "idrid_048",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_49_SE.tif",
+              "source_image_id": "idrid_049",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_50_SE.tif",
+              "source_image_id": "idrid_050",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_51_SE.tif",
+              "source_image_id": "idrid_051",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_52_SE.tif",
+              "source_image_id": "idrid_052",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_53_SE.tif",
+              "source_image_id": "idrid_053",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            },
+            {
+              "height": 2848,
+              "mode": "P",
+              "path": "SIHDatasets/idrid/annotations/segmentation/training/4. Soft Exudates/IDRiD_54_SE.tif",
+              "source_image_id": "idrid_054",
+              "unique_pixel_values": [
+                0,
+                1
+              ],
+              "width": 4288
+            }
+          ],
+          "missing_source_image_ids": [],
+          "non_binary_masks": []
+        }
+      }
+    }
+  },
+  "retinal_vessel": {
+    "testing": {
+      "decode_failures": [],
+      "dimension_mismatch_ids": [],
+      "ids": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "image_count": 20,
+      "manual_count": 0,
+      "mask_count": 20,
+      "pairing_mismatches": {
+        "images_without_manual": [],
+        "images_without_mask": [],
+        "manual_without_image": [],
+        "masks_without_image": []
+      }
+    },
+    "training": {
+      "decode_failures": [],
+      "dimension_mismatch_ids": [],
+      "ids": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "image_count": 20,
+      "manual_count": 20,
+      "mask_count": 20,
+      "pairing_mismatches": {
+        "images_without_manual": [],
+        "images_without_mask": [],
+        "manual_without_image": [],
+        "masks_without_image": []
+      }
+    }
+  },
+  "status": "passed"
+}

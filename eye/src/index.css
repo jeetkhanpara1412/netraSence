@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    /* 20% smaller scale across full system UI (80% scale) */
+    zoom: 0.8;
+    -webkit-text-size-adjust: 100%;
+  }
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom utility classes for responsive clinical UI */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Precise A4 Print Formatting for 2-Page Clinical Report */
+@page {
+  size: A4 portrait;
+  margin: 8mm 8mm;
+}
+
+@media print {
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html, body {
+    zoom: 1 !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    font-size: 12px;
+  }
+
+  #root {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+
+  .no-print, [data-no-print] {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  /* Two-page exact A4 layout constraints */
+  .a4-page {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 278mm !important;
+    max-height: 278mm !important;
+    min-height: 265mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+
+  .a4-page-1 {
+    page-break-before: auto !important;
+    break-before: auto !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .a4-page-2 {
+    page-break-before: always !important;
+    break-before: page !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  header, footer, section, table, tr, .keep-together {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    image-rendering: high-quality !important;
+    image-rendering: -webkit-optimize-contrast !important;
+  }
+
+  .clinical-image-box {
+    image-rendering: high-quality !important;
+    image-rendering: -webkit-optimize-contrast !important;
+  }
+
+  .clinical-image-box img {
+    image-rendering: high-quality !important;
+    image-rendering: -webkit-optimize-contrast !important;
+  }
+}
+

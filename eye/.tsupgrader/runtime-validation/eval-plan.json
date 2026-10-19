@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-10-19T03:24:00Z",
+  "generatedOnPlatform": "win32",
+  "projectType": "webapp",
+  "setup": [],
+  "assertions": [
+    {
+      "name": "frontend-production-build",
+      "kind": "process",
+      "command": "npm",
+      "args": ["run", "build"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 300
+    },
+    {
+      "name": "frontend-type-check",
+      "kind": "process",
+      "command": "npm",
+      "args": ["run", "lint"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 180
+    },
+    {
+      "name": "backend-tests",
+      "kind": "process",
+      "command": "python",
+      "args": ["-m", "pytest", "tests", "-q"],
+      "cwd": "backend",
+      "prependPath": ["backend/.venv/Scripts"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 300
+    },
+    {
+      "name": "frontend-home-http-probe",
+      "kind": "http-probe",
+      "startCommand": "npm",
+      "startArgs": ["run", "dev"],
+      "url": "http://127.0.0.1:3000/",
+      "verificationMethod": "http-status",
+      "expected": "200",
+      "timeoutSeconds": 120
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+/* RetinaSight AI - Clinical Ophthalmology Design System
+   Smart India Hackathon (SIH) 2026 Edition
+   Calm, clinical, high information density styling
+*/
+
+:root {
+  --color-clinical-bg: #f8fafc;
+  --color-clinical-surface: #ffffff;
+  --color-clinical-border: #e2e8f0;
+  --color-clinical-navy: #0f172a;
+  --color-clinical-teal: #0d9488;
+  --color-clinical-teal-dark: #0f766e;
+  --color-clinical-amber: #d97706;
+  --color-clinical-rose: #e11d48;
+  --color-clinical-slate: #475569;
+}
+
+/* Medical Imaging Canvas */
+.retina-viewport {
+  background-color: #05070a;
+  background-image: radial-gradient(#111827 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Subtle scrollbars for dense data panels */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Clinical print layout rules */
+@media print {
+  @page {
+    size: A4;
+    margin: 1.2cm;
+  }
+  
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-page-break {
+    page-break-before: always;
+  }
+
+  .print-avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
